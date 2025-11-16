@@ -1,7 +1,6 @@
 //Ty BetaM!
 //econ_item_schema.cpp - line 4421
 #base items_game.txt
-#base items_edwinstrollingitems.txt
 #base items_dritems.txt
 
 "items_game"
