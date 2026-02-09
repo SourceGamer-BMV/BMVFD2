@@ -1,0 +1,134 @@
+"items_game"
+{
+        "prefabs"
+	{
+		"comm"
+		{
+			"attributes"
+			{
+				"is commisioned item"
+				{
+					"attribute_class"	"mult_sniper_charge_base_dummy"
+					"value"				"1"
+				}
+			}
+		}
+	}
+    "attributes"
+    {
+		"4103"
+		{
+			"name" "is commisioned item"
+			"attribute_class"	"mult_sniper_charge_base_dummy"
+			"description_string"	"#Attrib_CommItem"
+			"description_format"	"value_is_additive"
+			"hidden"	"0"
+			"custom_color"			"177 95 2 255"
+			"effect_type"	"neutral"
+			"stored_as_integer"	"0"
+		}
+		"4104"
+		{
+			"name" "costs a hat"
+			"attribute_class"	"mult_sniper_charge_base_dummy"
+			"description_string"	"#Attrib_NoHat"
+			"description_format"	"value_is_additive"
+			"hidden"	"0"
+			"effect_type"	"negative"
+			"stored_as_integer"	"0"
+		}
+    }
+    "items"
+    {
+		"4128"
+		{
+			"name"	"One Shotter"
+			"prefab"	"comm weapon_scattergun"
+			"hidden"	"0"
+			"moditem"			"1"
+			"item_class"	"tf_weapon_scattergun"
+			"craft_class"	""		
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"loadondemand" "1"
+			"propername"		"1"
+			"show_in_armory"	"1"
+			"item_type_name" "Workshop  Modeled Weapon"
+			"item_name"	"One Shotter"
+			"item_description"	"Why Triple Shoot With a inaccurate weapon when you can Shoot with a accurate weapon"
+			"item_quality"	"unique"
+			"min_ilevel"	"50"
+			"max_ilevel"	"50"
+			"image_inventory"	"backpack/player/items/all_class/saxton_hat"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"		"models/weapons/c_models/c_oneshotter.mdl"
+			"used_by_classes"
+			{
+				"scout"	"1"
+			}
+			"attributes"
+			{
+			     "costs a hat"
+			     {
+			     	     "attribute_class"	"mult_sniper_charge_base_dummy"
+				     "value" 	"0" 
+			     }
+                             "fire rate bonus"
+			     {
+			     	     "attribute_class"	"mult_postfiredelay"
+				     "value" 	"0.5" 
+			     }
+                             "generate rage on damage"
+			     {
+			     	     "attribute_class"	"generate_rage_on_dmg"
+				     "value" 	"1" 
+			     }
+                             "mod rage damage boost"
+			     {
+			     	     "attribute_class"	"rage_damage"
+				     "value" 	"1.7" 
+			     }
+                             "air dash count"
+			     {
+			     	     "attribute_class"	"air_dash_count"
+				     "value" 	"5" 
+			     }
+                             "move speed penalty"
+			     {
+			     	     "attribute_class"	"mult_player_movespeed"
+				     "value" 	"0.8" 
+			     }
+                             "dmg taken from fire reduced"
+			     {
+			     	     "attribute_class"	"mult_dmgtaken_from_fire"
+				     "value" 	"0.3" 
+			     }
+                             "weapon spread bonus"
+			     {
+			     	     "attribute_class"	"mult_spread_scale"
+				     "value" 	"0" 
+			     }
+                             "show hits in killfeed"
+    			     {
+        			      "attribute_class"  "show_hits_in_killfeed"
+        			      "value"            "1"
+    			      }
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_SilencedPistol.Single"
+				"sound_burst"			"Weapon_SilencedPistol.SingleCrit"
+				"player_bodygroups"
+				{
+					"hat"			"1"
+					"headphones"	"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+                }
+	}
+}
